@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirSoft.Models", "AirSoft.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirSoft.Data", "AirSoft.Data\AirSoft.Data.csproj", "{2596CCFC-6F93-4A96-8380-E32D9B81857A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirSoft.Clinet", "AirSoft.Clinet\AirSoft.Clinet.csproj", "{B0ABD9FF-9D93-402E-B7CA-3BA22FBE7CA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirSoft.Client", "AirSoft.Client\AirSoft.Client.csproj", "{C6C30C97-25BB-4B95-AD72-C148399AAB25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{2596CCFC-6F93-4A96-8380-E32D9B81857A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2596CCFC-6F93-4A96-8380-E32D9B81857A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2596CCFC-6F93-4A96-8380-E32D9B81857A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0ABD9FF-9D93-402E-B7CA-3BA22FBE7CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0ABD9FF-9D93-402E-B7CA-3BA22FBE7CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0ABD9FF-9D93-402E-B7CA-3BA22FBE7CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0ABD9FF-9D93-402E-B7CA-3BA22FBE7CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C30C97-25BB-4B95-AD72-C148399AAB25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C30C97-25BB-4B95-AD72-C148399AAB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C30C97-25BB-4B95-AD72-C148399AAB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C30C97-25BB-4B95-AD72-C148399AAB25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

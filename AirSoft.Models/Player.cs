@@ -24,7 +24,7 @@ namespace AirSoft.Models
 
         public string NickName { get; set; }
 
-        public int TeamId { get; set; }
+        public int? TeamId { get; set; }
 
         public virtual Team Team { get; set; }
 

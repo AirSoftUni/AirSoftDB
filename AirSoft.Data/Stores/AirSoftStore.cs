@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AirSoft.Data
+namespace AirSoft.Data.Stores
 {
-    public static class Utility
+    public class AirSoftStore
     {
-        public static void InitDB()
+        private AirSoftContext context = new AirSoftContext();
+
+        public void Initialize()
         {
-            var context = new AirSoftContext();
             context.Database.Initialize(true);
         }
     }

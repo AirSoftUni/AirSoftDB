@@ -52,8 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AirSoftContext.cs" />
+    <Compile Include="AirSoftDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility.cs" />
+    <Compile Include="Stores\AirSoftStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AirSoft.Models\AirSoft.Models.csproj">
