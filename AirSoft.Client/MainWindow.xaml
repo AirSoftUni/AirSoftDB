@@ -41,8 +41,6 @@
                     <TextBox x:Name="LastNameBox" Text="{Binding LastName}"  Margin="5"/>
                     <Label Content="Team Name:" Target="{Binding ElementName=TeamBox}"/>
                     <TextBlock x:Name="TeamBox" Text="{Binding Team.Name}"  Margin="5"/>
-<<<<<<< HEAD
-
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="15">
                     <Button
@@ -71,14 +69,7 @@
                     Content="Save Changes"
                     Background="DeepSkyBlue"
                     Click="SaveChanges_Click"/>
-=======
-<<<<<<< HEAD
-                    
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 74204b0e4352febdeb92a4ae5eac046e39d4d0cc
->>>>>>> 89236c23f38e50c2f8a82b09954bc3ad15af563d
+
                 </StackPanel>
                 
             </Grid>
@@ -154,12 +145,11 @@
                     </ListView.View>
                 </ListView>
 
-<<<<<<< HEAD
                 <!--<StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
                     <Label Content="Name:" Target="{Binding ElementName=Name}"/>
                     <TextBlock x:Name="Name" Text="{Binding Name}"  Margin="5"/>
                 </StackPanel>-->
-=======
+
                 <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
                       
                       
@@ -177,7 +167,6 @@
                         </ListView.View>
                     </ListView>
                 </StackPanel>
->>>>>>> 89236c23f38e50c2f8a82b09954bc3ad15af563d
             </Grid>
         </TabItem>
         
