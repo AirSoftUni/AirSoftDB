@@ -30,10 +30,23 @@ namespace AirSoft.Client
             InitializeComponent();
 
             // store.Initialize();
-                
-            DataContext = store.GetAllPlayers();
-                
+
+            // DataContext = store.GetAllPlayers();
+
+            DataContext = new
+            {
+                players = store.GetAllPlayers(),
+                games = store.GetAllGames(),
+                teams = store.GetAllTeams()
+            };
             
+
+
+        }
+
+        private void PlayersInGame_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -25,5 +25,10 @@ namespace AirSoft.Data.Stores
         {
             return this.context.Games.ToList();
         }
+
+        public List<Team> GetAllTeams()
+        {
+            return this.context.Teams.ToList();
+        }
     }
 }
