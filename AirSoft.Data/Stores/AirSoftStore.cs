@@ -26,9 +26,22 @@ namespace AirSoft.Data.Stores
             return this.context.Games.ToList();
         }
 
+<<<<<<< HEAD
+        public Player AddNewPlayer()
+        {
+            var newPlayer = new Player
+            {
+                FirstName = "First Name",
+                LastName = "LastName",
+                NickName = "New Player"
+            };
+            this.context.Players.Add(newPlayer);
+            return (newPlayer);
+=======
         public List<Team> GetAllTeams()
         {
             return this.context.Teams.ToList();
+>>>>>>> 025bda4c14f76eb8471748a7a04e48899201d45d
         }
     }
 }

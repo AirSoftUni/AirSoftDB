@@ -9,6 +9,8 @@
         Title="MainWindow" Height="350" Width="525">
 
 
+
+
     <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="311" VerticalAlignment="Top" Width="508" Grid.RowSpan="2" Grid.ColumnSpan="2">
         <TabItem Header="Players">
             <Grid DataContext="{Binding players}">
@@ -32,14 +34,19 @@
                     </ListView.View>
                 </ListView>
 
-                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="15">
                     <Label Content="First Name:" Target="{Binding ElementName=FirstNameBox}"/>
-                    <TextBlock x:Name="FirstNameBox" Text="{Binding FirstName}"  Margin="5"/>
+                    <TextBox x:Name="FirstNameBox" Text="{Binding FirstName}"  Margin="5"/>
                     <Label Content="Last Name:" Target="{Binding ElementName=LastNameBox}"/>
                     <TextBlock x:Name="LastNameBox" Text="{Binding LastName}"  Margin="5"/>
                     <Label Content="Team Name:" Target="{Binding ElementName=TeamBox}"/>
                     <TextBlock x:Name="TeamBox" Text="{Binding Team.Name}"  Margin="5"/>
+<<<<<<< HEAD
                     
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 74204b0e4352febdeb92a4ae5eac046e39d4d0cc
                 </StackPanel>
             </Grid>
         </TabItem>
@@ -88,7 +95,19 @@
                         </ListView.View>
                     </ListView>
 
+>>>>>>> 025bda4c14f76eb8471748a7a04e48899201d45d
                 </StackPanel>
+
+                <Button
+                    Height="20"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Grid.Column="1" 
+                    Grid.Row="0" 
+                    Content="Add New Player"
+                    Background="GreenYellow"
+                    Click="AddNewPlayer_Click"/>
+
             </Grid>
         </TabItem>
         <TabItem Header="Teams">
