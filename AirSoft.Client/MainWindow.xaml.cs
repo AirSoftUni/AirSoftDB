@@ -24,48 +24,47 @@ namespace AirSoft.Client
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<Player> players = new ObservableCollection<Player>();
+        ObservableCollection<AirSoftContext> context = new ObservableCollection<AirSoftContext>();
 
         AirSoftStore store = new AirSoftStore();
         public MainWindow()
         {
             InitializeComponent();
 
-<<<<<<< HEAD
-            //store.Initialize();
+            //LoadPlayers();
+            //LoadGames();
 
-            LoadPlayers();
-                
-=======
-            // store.Initialize();
-
-            // DataContext = store.GetAllPlayers();
 
             DataContext = new
             {
-                players = store.GetAllPlayers(),
-                games = store.GetAllGames(),
-                teams = store.GetAllTeams()
+                players = new ObservableCollection<Player>(store.GetAllPlayers()),
+                games = new ObservableCollection<Game>(store.GetAllGames()),
+                teams = new ObservableCollection<Team>(store.GetAllTeams())
             };
->>>>>>> 025bda4c14f76eb8471748a7a04e48899201d45d
-            
 
 
         }
 
-        private void PlayersInGame_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
-        }
         public void LoadPlayers()
         {
             DataContext = new ObservableCollection<Player>(store.GetAllPlayers());
+        }
+        public void LoadGames()
+        {
+            DataContext = new ObservableCollection<Game>(store.GetAllGames());
         }
 
 
         private void AddNewPlayer_Click(object sender, RoutedEventArgs e)
         {
+
             ((ObservableCollection<Player>)DataContext).Add(this.store.AddNewPlayer());
+        }
+
+        private void SaveChanges_Click(object sender, RoutedEventArgs e)
+        {
+            this.store.SaveChanges();
         }
     }
 }
