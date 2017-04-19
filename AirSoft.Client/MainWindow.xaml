@@ -41,6 +41,7 @@
                     <TextBox x:Name="LastNameBox" Text="{Binding LastName}"  Margin="5"/>
                     <Label Content="Team Name:" Target="{Binding ElementName=TeamBox}"/>
                     <TextBlock x:Name="TeamBox" Text="{Binding Team.Name}"  Margin="5"/>
+<<<<<<< HEAD
 
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="15">
@@ -70,6 +71,14 @@
                     Content="Save Changes"
                     Background="DeepSkyBlue"
                     Click="SaveChanges_Click"/>
+=======
+<<<<<<< HEAD
+                    
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 74204b0e4352febdeb92a4ae5eac046e39d4d0cc
+>>>>>>> 89236c23f38e50c2f8a82b09954bc3ad15af563d
                 </StackPanel>
                 
             </Grid>
@@ -89,7 +98,7 @@
 
                 <ListView x:Name="gameList"
                   ItemsSource="{Binding}"
-                  IsSynchronizedWithCurrentItem="True" Margin="0,0,0.4,0.2" Grid.ColumnSpan="2">
+                  IsSynchronizedWithCurrentItem="True"   Grid.ColumnSpan="2">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="ActiveGames"
@@ -98,17 +107,19 @@
                     </ListView.View>
                 </ListView>
 
-                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="3" Margin="0.6,1,0.6,1.2">
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="3"  >
                     <Label Content="Game Name:" Target="{Binding ElementName=GameNameBox}"/>
-                    <TextBlock x:Name="GameюNameBox" Text="{Binding Name}"  Margin="5"/>
+                    <TextBlock x:Name="GameюNameBox" Text="{Binding Name}"   />
+                    <Label Content="Created By:" Target="{Binding ElementName=CreateBox}"/>
+                    <TextBlock x:Name="CreateBox" Text="{Binding CreatorsTeam.Name}"  />
                     <Label Content="Description:" Target="{Binding ElementName=Description}"/>
-                    <TextBlock x:Name="Description" Text="{Binding Description}"  Margin="5,5,4.4,5" Height="32"/>
+                    <TextBlock x:Name="Description" Text="{Binding Description}"   />
                     <Label Content="Date:" Target="{Binding ElementName=Date}"/>
-                    <TextBlock x:Name="Date" Text="{Binding StartDate}"  Margin="5,5,4.4,5" Height="13"/>
+                    <TextBlock x:Name="Date" Text="{Binding StartDate}"   />
 
                     <ListView x:Name="PlayerList"
                   ItemsSource="{Binding ParticipatingPlayers}"
-                  IsSynchronizedWithCurrentItem="True" Margin="0,0,0.8,0.2" Grid.ColumnSpan="2" Height="89">
+                  IsSynchronizedWithCurrentItem="True"   Grid.ColumnSpan="2"  >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="ActivePlayers"
@@ -143,10 +154,30 @@
                     </ListView.View>
                 </ListView>
 
+<<<<<<< HEAD
                 <!--<StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
                     <Label Content="Name:" Target="{Binding ElementName=Name}"/>
                     <TextBlock x:Name="Name" Text="{Binding Name}"  Margin="5"/>
                 </StackPanel>-->
+=======
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
+                      
+                      
+
+                    <ListView x:Name="TeamPlayerList"
+                  ItemsSource="{Binding Players}"
+                  IsSynchronizedWithCurrentItem="True" Margin="0,0,0.8,0.2" Grid.ColumnSpan="2" Height="256">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Player Name"
+                                    DisplayMemberBinding="{Binding FirstName}"/>
+                                <GridViewColumn Header="NickName"
+                                    DisplayMemberBinding="{Binding NickName}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </StackPanel>
+>>>>>>> 89236c23f38e50c2f8a82b09954bc3ad15af563d
             </Grid>
         </TabItem>
         
