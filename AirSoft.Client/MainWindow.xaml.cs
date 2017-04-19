@@ -31,11 +31,31 @@ namespace AirSoft.Client
         {
             InitializeComponent();
 
+<<<<<<< HEAD
             //store.Initialize();
 
             LoadPlayers();
                 
+=======
+            // store.Initialize();
+
+            // DataContext = store.GetAllPlayers();
+
+            DataContext = new
+            {
+                players = store.GetAllPlayers(),
+                games = store.GetAllGames(),
+                teams = store.GetAllTeams()
+            };
+>>>>>>> 025bda4c14f76eb8471748a7a04e48899201d45d
             
+
+
+        }
+
+        private void PlayersInGame_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
         public void LoadPlayers()
         {

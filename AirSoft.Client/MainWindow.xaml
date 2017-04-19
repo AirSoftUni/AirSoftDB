@@ -13,7 +13,7 @@
 
     <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="311" VerticalAlignment="Top" Width="508" Grid.RowSpan="2" Grid.ColumnSpan="2">
         <TabItem Header="Players">
-            <Grid>
+            <Grid DataContext="{Binding players}">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition Height="23"/>
@@ -41,6 +41,55 @@
                     <TextBlock x:Name="LastNameBox" Text="{Binding LastName}"  Margin="5"/>
                     <Label Content="Team Name:" Target="{Binding ElementName=TeamBox}"/>
                     <TextBlock x:Name="TeamBox" Text="{Binding Team.Name}"  Margin="5"/>
+<<<<<<< HEAD
+=======
+                </StackPanel>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Games">
+            <Grid DataContext="{Binding games}">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="23"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*"/>
+                    <ColumnDefinition Width="148*"/>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition Width="335*"/>
+                </Grid.ColumnDefinitions>
+
+                <ListView x:Name="gameList"
+                  ItemsSource="{Binding}"
+                  IsSynchronizedWithCurrentItem="True" Margin="0,0,0.4,0.2" Grid.ColumnSpan="2">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ActiveGames"
+                                    DisplayMemberBinding="{Binding Name}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="3" Margin="0.6,1,0.6,1.2">
+                    <Label Content="Game Name:" Target="{Binding ElementName=GameNameBox}"/>
+                    <TextBlock x:Name="GameюNameBox" Text="{Binding Name}"  Margin="5"/>
+                    <Label Content="Description:" Target="{Binding ElementName=Description}"/>
+                    <TextBlock x:Name="Description" Text="{Binding Description}"  Margin="5,5,4.4,5" Height="32"/>
+                    <Label Content="Date:" Target="{Binding ElementName=Date}"/>
+                    <TextBlock x:Name="Date" Text="{Binding StartDate}"  Margin="5,5,4.4,5" Height="13"/>
+
+                    <ListView x:Name="PlayerList"
+                  ItemsSource="{Binding ParticipatingPlayers}"
+                  IsSynchronizedWithCurrentItem="True" Margin="0,0,0.8,0.2" Grid.ColumnSpan="2" Height="89">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="ActivePlayers"
+                                    DisplayMemberBinding="{Binding FirstName}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+>>>>>>> 025bda4c14f76eb8471748a7a04e48899201d45d
                 </StackPanel>
 
                 <Button
@@ -56,7 +105,34 @@
             </Grid>
         </TabItem>
         <TabItem Header="Teams">
-            <Grid Background="#FFE5E5E5"/>
+            <Grid DataContext="{Binding teams}">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="23"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <ListView x:Name="TeamList"
+                  ItemsSource="{Binding}"
+                  IsSynchronizedWithCurrentItem="True">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="TeamName"
+                                    DisplayMemberBinding="{Binding Name}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
+                    <Label Content="Name:" Target="{Binding ElementName=Name}"/>
+                    <TextBlock x:Name="Name" Text="{Binding Name}"  Margin="5"/>
+
+                </StackPanel>
+            </Grid>
         </TabItem>
+        
     </TabControl>
 </Window>
