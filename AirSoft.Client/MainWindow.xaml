@@ -4,16 +4,39 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirSoft.Client"
+        xmlns:data="clr-namespace:AirSoft.Models;assembly=AirSoft.Models"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="23"/>
             <RowDefinition/>
+            <RowDefinition Height="23"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
+
+        <ListView x:Name="PlayersList"
+                  ItemsSource="{Binding}"
+                  IsSynchronizedWithCurrentItem="True">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="NickName"
+                                    DisplayMemberBinding="{Binding NickName}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
+            <Label Content="First Name:" Target="{Binding ElementName=FirstNameBox}"/>
+            <TextBlock x:Name="FirstNameBox" Text="{Binding FirstName}"  Margin="5"/>
+            <Label Content="Last Name:" Target="{Binding ElementName=LastNameBox}"/>
+            <TextBlock x:Name="LastNameBox" Text="{Binding LastName}"  Margin="5"/>
+            <Label Content="Team Name:" Target="{Binding ElementName=TeamBox}"/>
+            <TextBlock x:Name="TeamBox" Text="{Binding Team}"  Margin="5"/>
+        </StackPanel>
+
     </Grid>
 </Window>

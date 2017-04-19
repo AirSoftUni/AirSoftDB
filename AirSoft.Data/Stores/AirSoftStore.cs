@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AirSoft.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,11 @@ namespace AirSoft.Data.Stores
         public void Initialize()
         {
             context.Database.Initialize(true);
+        }
+
+        public List<Player> GetAllPlayers()
+        {
+            return this.context.Players.ToList();
         }
     }
 }

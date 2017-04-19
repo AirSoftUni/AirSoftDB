@@ -11,7 +11,7 @@ namespace AirSoft.Data
         public AirSoftContext()
             : base("name=AirSoftContext")
         {
-            Database.SetInitializer(new AirSoftDbInitializer());
+            //Database.SetInitializer(new AirSoftDbInitializer());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

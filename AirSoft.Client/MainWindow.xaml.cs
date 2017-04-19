@@ -1,4 +1,6 @@
-﻿using AirSoft.Data.Stores;
+﻿using AirSoft.Data;
+using AirSoft.Data.Stores;
+using AirSoft.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +29,11 @@ namespace AirSoft.Client
         {
             InitializeComponent();
 
-            store.Initialize();
+            //store.Initialize();
+
+            DataContext = store.GetAllPlayers();
+
+            
         }
     }
 }

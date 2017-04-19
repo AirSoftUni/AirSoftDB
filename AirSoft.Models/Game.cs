@@ -25,8 +25,6 @@ namespace AirSoft.Models
 
         public DateTime StartDate { get; set; }
 
-        public int CretorTeamId { get; set; }
-
         public virtual Team CreatorsTeam { get; set; }
 
         public virtual ICollection<Player> ParticipatingPlayers { get; set; }
