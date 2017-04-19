@@ -106,6 +106,12 @@
       <Name>AirSoft.Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\airsoftimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\airsoft.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

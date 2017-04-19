@@ -9,7 +9,7 @@ namespace AirSoft.Data.Stores
 {
     public class AirSoftStore
     {
-        private AirSoftContext context = new AirSoftContext();
+        public AirSoftContext context = new AirSoftContext();
 
         public void Initialize()
         {
@@ -26,6 +26,10 @@ namespace AirSoft.Data.Stores
             return this.context.Games.ToList();
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ed3579218058925925aa93bdd9fe7e7aff80b76
         public Player AddNewPlayer()
         {
             var newPlayer = new Player
@@ -40,11 +44,15 @@ namespace AirSoft.Data.Stores
         public List<Team> GetAllTeams()
         {
             return this.context.Teams.ToList();
+<<<<<<< HEAD
         }
 
         public void SaveChanges()
         {
             this.context.SaveChanges();
+=======
+ 
+>>>>>>> 8ed3579218058925925aa93bdd9fe7e7aff80b76
         }
     }
 }
