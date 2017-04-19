@@ -91,7 +91,7 @@ namespace AirSoft.Data
             bosnec.ParticipatingPlayers.Add(dobri);
             bosnec.ParticipatingPlayers.Add(ivan);
             bosnec.ParticipatingPlayers.Add(drago);
-
+            
             context.Games.Add(slivnitsa);
             context.Games.Add(bosnec);
             context.SaveChanges();

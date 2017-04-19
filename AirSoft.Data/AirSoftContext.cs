@@ -11,7 +11,7 @@ namespace AirSoft.Data
         public AirSoftContext()
             : base("name=AirSoftContext")
         {
-            //Database.SetInitializer(new AirSoftDbInitializer());
+             Database.SetInitializer(new AirSoftDbInitializer());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -39,9 +39,5 @@ namespace AirSoft.Data
          public virtual DbSet<Team> Teams { get; set; }
     }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
+    
 }

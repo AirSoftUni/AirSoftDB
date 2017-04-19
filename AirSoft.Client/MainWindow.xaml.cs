@@ -29,10 +29,10 @@ namespace AirSoft.Client
         {
             InitializeComponent();
 
-            //store.Initialize();
-
+            // store.Initialize();
+                
             DataContext = store.GetAllPlayers();
-
+                
             
         }
     }
