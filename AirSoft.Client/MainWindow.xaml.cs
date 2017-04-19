@@ -30,16 +30,7 @@ namespace AirSoft.Client
         public MainWindow()
         {
             InitializeComponent();
-
-
-            //store.Initialize();
-
-
-
-
-            // store.Initialize();
-
-            // DataContext = store.GetAllPlayers();
+ 
 
             DataContext = new
             {

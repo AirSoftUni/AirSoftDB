@@ -7,10 +7,7 @@
         xmlns:data="clr-namespace:AirSoft.Models;assembly=AirSoft.Models"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-
-
-
-
+ 
     <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="311" VerticalAlignment="Top" Width="508" Grid.RowSpan="2" Grid.ColumnSpan="2">
 
 
