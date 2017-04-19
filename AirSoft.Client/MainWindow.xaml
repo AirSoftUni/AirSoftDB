@@ -18,7 +18,7 @@
 
                 <Grid.RowDefinitions>
                     <RowDefinition/>
-                    <RowDefinition Height="23"/>
+                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
@@ -42,10 +42,42 @@
                     <Label Content="First Name:" Target="{Binding ElementName=FirstNameBox}"/>
                     <TextBox x:Name="FirstNameBox" Text="{Binding FirstName}"  Margin="5"/>
                     <Label Content="Last Name:" Target="{Binding ElementName=LastNameBox}"/>
-                    <TextBlock x:Name="LastNameBox" Text="{Binding LastName}"  Margin="5"/>
+                    <TextBox x:Name="LastNameBox" Text="{Binding LastName}"  Margin="5"/>
                     <Label Content="Team Name:" Target="{Binding ElementName=TeamBox}"/>
                     <TextBlock x:Name="TeamBox" Text="{Binding Team.Name}"  Margin="5"/>
                 </StackPanel>
+<<<<<<< HEAD
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="15">
+                    <Button
+                    Height="20"
+                    Width="90"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Content="Add New Player"
+                    Background="GreenYellow"
+                    Click="AddNewPlayer_Click"/>
+
+                    <Button
+                    Height="20"
+                    Width="90"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"                  
+                    Content="Delete"
+                    Background="Crimson"
+                    Click="SaveChanges_Click"/>
+
+                    <Button
+                    Height="20"
+                    Width="90"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"                  
+                    Content="Save Changes"
+                    Background="DeepSkyBlue"
+                    Click="SaveChanges_Click"/>
+
+                </StackPanel>
+                
+=======
                 <Button
                     Height="20"
                     VerticalAlignment="Bottom"
@@ -55,6 +87,7 @@
                     Content="Add New Player"
                     Background="GreenYellow"
                     Click="AddNewPlayer_Click"/>
+>>>>>>> 8ed3579218058925925aa93bdd9fe7e7aff80b76
             </Grid>
         </TabItem>
 
@@ -105,11 +138,16 @@
                         </ListView.View>
                     </ListView>
 
+<<<<<<< HEAD
+                </StackPanel>
+
+=======
 
                 </StackPanel>
 
 
 
+>>>>>>> 8ed3579218058925925aa93bdd9fe7e7aff80b76
             </Grid>
         </TabItem>
 
@@ -137,9 +175,20 @@
                     </ListView.View>
                 </ListView>
 
+<<<<<<< HEAD
+                <!--<StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
+                    <Label Content="Name:" Target="{Binding ElementName=Name}"/>
+                    <TextBlock x:Name="Name" Text="{Binding Name}"  Margin="5"/>
+                </StackPanel>-->
+
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="1">
+                      
+                      
+=======
                 <StackPanel Orientation="vertical" Grid.Row="0" Grid.Column="1" Margin="1">
 
 
+>>>>>>> 8ed3579218058925925aa93bdd9fe7e7aff80b76
 
                     <ListView x:Name="TeamPlayerList"
                   ItemsSource="{Binding Players}"

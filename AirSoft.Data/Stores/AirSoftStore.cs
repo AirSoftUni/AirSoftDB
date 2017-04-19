@@ -26,7 +26,10 @@ namespace AirSoft.Data.Stores
             return this.context.Games.ToList();
         }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 8ed3579218058925925aa93bdd9fe7e7aff80b76
         public Player AddNewPlayer()
         {
             var newPlayer = new Player
@@ -41,7 +44,15 @@ namespace AirSoft.Data.Stores
         public List<Team> GetAllTeams()
         {
             return this.context.Teams.ToList();
+<<<<<<< HEAD
+        }
+
+        public void SaveChanges()
+        {
+            this.context.SaveChanges();
+=======
  
+>>>>>>> 8ed3579218058925925aa93bdd9fe7e7aff80b76
         }
     }
 }
